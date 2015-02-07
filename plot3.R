@@ -43,7 +43,9 @@ plot3 <- function(){
            type="l",
            col="blue")
      legend("topright",            ## draw legend
-            names(data)[7:9])
+            names(data)[7:9],
+            col=c("black","red","blue"),
+            lty=1)
      
      dev.off()                ## and close the device again to write
 }

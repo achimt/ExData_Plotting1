@@ -60,7 +60,11 @@ plot4 <- function(){
            type="l",
            col="blue")
      legend("topright",            ## draw legend
-            names(data)[7:9])
+            names(data)[7:9],
+            cex=0.95,
+            col=c("black","red","blue"),
+            lty=1,
+            bty="n")
      
      ## and at the end, we'll put in Global reactive Power
      plot(Time,
